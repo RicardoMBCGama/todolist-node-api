@@ -4,7 +4,8 @@
   "description": "A To Do List API built to learn NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/RicardoMBCGama/todolist-node-api/issues"
   },
-  "homepage": "https://github.com/RicardoMBCGama/todolist-node-api#readme"
+  "homepage": "https://github.com/RicardoMBCGama/todolist-node-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
