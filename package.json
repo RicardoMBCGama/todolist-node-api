@@ -1,0 +1,26 @@
+{
+  "name": "todolist-node-api",
+  "version": "1.0.0",
+  "description": "A To Do List API built to learn NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoMBCGama/todolist-node-api.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "NodeJS",
+    "Learn",
+    "Tutorial"
+  ],
+  "author": "Ricardo Gama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoMBCGama/todolist-node-api/issues"
+  },
+  "homepage": "https://github.com/RicardoMBCGama/todolist-node-api#readme"
+}
