@@ -1,10 +1,23 @@
 var express = require("express")
 var app = express()
-port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
+var mongoose = require("mongoose");
+var Task = require("./api/models/todoListModel");
+var bodyParser = require("body-parser");
 
-app.get("/", (req,res) => {
-  res.send("Hello World!");
-});
+//Database connection
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://localhost/Tododb");
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
+var routes = require("./api/routes/todoListRoutes")
+routes(app;)
+//
+// app.get("/", (req,res) => {
+//   res.send("Hello World!");
+// });
 
 
 app.listen(port, () => {
